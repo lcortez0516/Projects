@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food App</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navigation -->
+    <header>
+      <div
+        class="container mx-auto h-16 px-5 flex items-center justify-between"
+      >
+        <div class="logo">
+          <a href="#"
+            ><img src="img/pizza-pan.png" alt="logo" class="w-14"
+          /></a>
+        </div>
+        <nav>
+          <ul class="flex gap-10">
+            <li><a href="#" class="text-slate-800 text-md">Menu</a></li>
+            <li><a href="#" class="text-slate-800 text-md">Order</a></li>
+            <li><a href="#" class="text-slate-800 text-md">Restaurants</a></li>
+            <li><a href="#" class="text-slate-800 text-md">Track Order</a></li>
+          </ul>
+        </nav>
+        <div class="flex items-center gap-10">
+          <div class="h-10 bg-blue-100 w-80 px-5 rounded-md flex items-center">
+            <input
+              type="text"
+              class="h-full w-full bg-blue-100 text-sm outline-none"
+              placeholder="Search Restaurants, Recipes ...."
+            />
+            <i class="fa fa-search text-blue-400 cursor-pointer text-xl"></i>
+          </div>
+          <i class="fa fa-cart-plus text-blue-400 cursor-pointer text-xl"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div
+          class="container h-screen px-5 mx-auto flex items-center justify-between"
+        >
+          <div class="main-text basis-3/5">
+            <h1 class="text-7xl my-5">Craving Something Delicious?</h1>
+            <p class="text-xl text-slate-600">
+              Get Food Delivered Right to Your Door
+            </p>
+          </div>
+          <div class="main-img">
+            <img src="img/hero-biryani.png" alt="burger" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

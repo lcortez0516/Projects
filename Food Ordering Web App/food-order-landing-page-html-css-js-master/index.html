@@ -16,9 +16,9 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="bg-white">
     <!-- navigation -->
-    <header>
+    <header class="fixed top-0 left-0 w-full bg-white">
       <div
         class="container mx-auto h-16 px-5 flex items-center justify-between"
       >
@@ -36,15 +36,15 @@
           </ul>
         </nav>
         <div class="flex items-center gap-10">
-          <div class="h-10 bg-blue-100 w-80 px-5 rounded-md flex items-center">
+          <div class="h-10 bg-slate-50 w-80 px-5 rounded-md flex items-center">
             <input
               type="text"
-              class="h-full w-full bg-blue-100 text-sm outline-none"
+              class="h-full w-full bg-slate-50 text-sm outline-none"
               placeholder="Search Restaurants, Recipes ...."
             />
-            <i class="fa fa-search text-blue-400 cursor-pointer text-xl"></i>
+            <i class="fa fa-search text-orange-400 cursor-pointer text-xl"></i>
           </div>
-          <i class="fa fa-cart-plus text-blue-400 cursor-pointer text-xl"></i>
+          <i class="fa fa-cart-plus text-orange-400 cursor-pointer text-xl"></i>
         </div>
       </div>
     </header>
@@ -54,13 +54,30 @@
           class="container h-screen px-5 mx-auto flex items-center justify-between"
         >
           <div class="main-text basis-3/5">
-            <h1 class="text-7xl my-5">Craving Something Delicious?</h1>
-            <p class="text-xl text-slate-600">
-              Get Food Delivered Right to Your Door
+            <h1 class="text-5xl my-5">
+              Craving Something Delicious? Your Next Meal is Just a Tap Away
+            </h1>
+            <p class="text-md text-slate-500 w-[65%] py-4">
+              Browse, order, and savor your favorites from top local
+              restaurants—fast, easy, and delivered to your door
             </p>
+            <div class="buttons pt-7">
+              <a href="#" class="py-5 rounded-md px-8 bg-orange-500 text-white"
+                >Order Now</a
+              >
+              <a
+                href="#"
+                class="py-5 px-8 rounded-md border-orange-400 border-solid border-2 text-orange-500"
+                >Make reservation</a
+              >
+            </div>
           </div>
-          <div class="main-img">
-            <img src="img/hero-biryani.png" alt="burger" />
+          <div class="main-img basis-2/5">
+            <img
+              class="w-full object-contain"
+              src="https://plus.unsplash.com/premium_photo-1666920345410-8c9ca9b3c318?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="burger"
+            />
           </div>
         </div>
       </section>

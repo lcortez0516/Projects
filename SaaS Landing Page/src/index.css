@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+}
+
+@layer base {
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .contain {
+    @apply w-full mx-auto;
+  }
+}
+
+@layer components {
+  .link {
+    @apply text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-blue-600 after:transition-all;
+  }
+
+  .nav-button {
+    @apply hidden md:block bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 text-sm  font-medium transition-all shadow-lg hover:shadow-blue-100 cursor-pointer;
+  }
+}
